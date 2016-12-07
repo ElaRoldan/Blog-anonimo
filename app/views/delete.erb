@@ -1,0 +1,9 @@
+<h1><%= @show_post.title %></h1>
+<br>
+<p><%= @show_post.body %></p>
+<br>
+<h3>¿Estas seguro que quieres borrar este post?</h3>
+<p> Escribe "SI" para confirmar que deseas borrar o pulsa regresar para cancelar</p>
+ <a href="/delete/<%= @show_post.id %>"> Delete </a>
+<br>
+ <a href="/show"> Regresar </a>

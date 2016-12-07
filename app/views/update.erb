@@ -1,0 +1,11 @@
+<h2>Aqui puedes editar tu post</h2>
+<br>
+<form action="/update/<%=@show_post.id %>" method="post">
+<p>Introduce el nuevo titulo de tu post o copia y pega el que tienes</p>  
+<input type="text" name="post_title" value="<%=@show_post.title%>">
+<br>
+<br>
+<p>Introduce tu nuevo post</p>  
+<textarea name="body" rows="20" cols="70" ><%=@show_post.body%></textarea>
+<input type="submit" value="Editar post">
+</form>

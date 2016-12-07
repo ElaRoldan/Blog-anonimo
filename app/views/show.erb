@@ -1,0 +1,12 @@
+
+<h2>Estos son todos los posts que tenemos para ti</h2>
+</br>
+<% @all_post.each do |post| %>
+   <br>
+  <a href="/show_post/<%=post.id %>"><%= post.title %> </a>
+<% end %>
+</br>
+</br>
+<a href="/"> Regresar </a>
+
+
